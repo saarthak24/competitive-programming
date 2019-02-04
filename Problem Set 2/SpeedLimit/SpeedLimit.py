@@ -19,8 +19,3 @@ for line in fileinput.input():
         print(str(dist) + " miles")
         dist = 0
         last_time = 0
-
-
-
-
-  # do stuff with this line of input
