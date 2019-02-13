@@ -36,12 +36,10 @@ for line in fileinput.input():
             if(direction < 0):
                 if(int(tiles[startIndex]) == 0):
                     yellowSteps += 1
-                    print("Yellow Tile " + tiles[startIndex])
                 startIndex -= 1
             else:
                 if(int(tiles[startIndex]) == 0):
                     yellowSteps += 1
-                    print("Yellow Tile " + tiles[startIndex])
                 startIndex += 1
             totalSteps -= 1
         print(yellowSteps)
