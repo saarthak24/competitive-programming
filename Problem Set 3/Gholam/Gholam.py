@@ -13,7 +13,10 @@ totalSteps = 0
 for line in fileinput.input():
     data = line.rstrip('\n').split(' ')
     if len(data) is 1:
-        testCases = int(data[0])
+        try:
+            testCases = int(data[0])
+        except:
+            continue
     elif(len(data) is 2):
         tileLength = int(data[0])
         totalSteps = int(data[1])
